@@ -30,6 +30,8 @@ Aqui, o prompt com a problemática será dividido pela própria IA, que solucion
 ### Self Consistency
 Quando os dados necessitam de uma precisão maior, enviamos o mesmo prompt várias vezes para gerar diversas respostas e então pedimos para que a IA avalie a sua consistência.
 
+--- 
+
 # Desafio 01
 >### "Utilizar o Few-shot-Learning e o Chain-of-Thought para um problema do seu cotidiano".
 Para a técnica do "Few-shot-Learning", exemplifiquei para o Gemini (versão 1.5 Pro disponível no Google IA Studio) como queria que os textos que leio para treinar minha leitura em coreano fossem traduzidos:
