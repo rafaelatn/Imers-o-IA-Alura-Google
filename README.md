@@ -1,5 +1,6 @@
 # Imersão IA Alura & Google 2024
 Repositório voltado para a documentação do evento!
+<p align="left"><img src="./images/Alura & Google.jpg" width="500"/></p>
 
 ## Índice
 🤔 O que é a Imersão IA Alura & Google?
@@ -14,7 +15,7 @@ Repositório voltado para a documentação do evento!
 
    
 ## 🤔 O que é a Imersão IA Alura & Google?
-<p align="center"><img src="./assets/cover.png" width="500"/></p>
+<p align="center"><img src="./images/Alura & Google.jpg" width="700"/></p>
 O projeto tem como objetivo introduzir e ensinar os principais fundamentos da Inteligência Artificial Generativa, desde Engenharia de Prompt até a criação de programas usando o Gemini. O evento ocorreu de 06/05/24 a 10/05/24, havendo lives de abertura, introdução ao Python e encerramento nos dias 03, 08 e 13 de maio, respectivamente. 
 
 
