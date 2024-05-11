@@ -11,9 +11,9 @@ A alucinação da IA acontece quando não há um bom direcionamento para a taref
 
 ### Nestes casos, a solução será pedir a *justificativa* das respostas dadas.
 
-## 3.Tipos de Prompt
+## 3. Tipos de Prompt
 
->🚨 Aqueles que não forem exemplificados nesta parte serão apresentados nos desafios propostos.
+>🚨 Serão exemplificados nos desafios.
 
 ### Zero-shot-Prompting
 É o comando que não possui nenhuma referência de como a resposta deve ser gerada. 
@@ -98,8 +98,32 @@ O texto utiliza vocabulário e estruturas gramaticais relativamente simples. No 
 Considerações finais:
 O texto apresenta um início interessante para uma história com potencial para explorar temas como a vida rural, a solidão e o sobrenatural. Seria interessante continuar a leitura para descobrir o que acontece com o avô após adormecer e quais são as consequências de sua ação.
 
+---
+# Prompt Extra (Zero-shot-Prompting)
+
+Utilizamos esta técnica sem mesmo perceber e o exemplo que darei agora mostra isso. **Pequeno contexto:** estava testando as funções do Google IA Studio e acabei pedindo para ela analisar uma foto minha em uma corrida sem exemplificar a resposta nem detalhar os passos a seguir.
+
+```
+(Imagem subida para a IA)
+Analise esta foto.  Relate os possíveis sentimentos exibidos na feição e postura do corpo.
+Além disso, crie uma pequena trilha sonora que esteja relacionada à foto enviada.
+```
+# Resposta
+
+Na imagem, a corredora demonstra foco e determinação. Seu olhar fixo à frente, a postura ereta e o movimento impulsionado dos braços revelam a concentração em seu objetivo.
+
+A trilha sonora ideal para a foto seria uma música eletrônica com batidas aceleradas, transmitindo energia e vigor, como:
+- "Run Boy Run" - Woodkid: Uma faixa épica e inspiradora que evoca a busca por liberdade e superação.
+- "Till I Collapse" - Eminem ft. Nate Dogg: Uma canção impetuosa que incentiva a persistência e a busca pela vitória.
+- "Stronger" - Kanye West: Um hino de autoafirmação e poder, ideal para motivar a corredora em sua jornada.
+  
+A combinação da imagem com a trilha sonora escolhida cria uma atmosfera de força, foco e determinação, características essenciais para qualquer corredor em busca de seus objetivos.
+
+---
+
 # Desafio 02
->### "Trabalhar com os seus dados: obter planilha de seu histórico do Google com a extensão *Quick Chrome History Export* e pedir para o Gemini (ou Google IA Studio) resumir ela em - sites mais acessados, sua carga horária e sua finalidade. Peça também para ser gerado um relátorio sobre seu gerenciamento do tempo e como pode melhorar".
+>### "Escolher seu site preferido de notícias, pegar dez textos com o título e ensinar a IA. “Dado este texto, tenho esse título de notícias” por 10x, na 11x, perguntar qual seria o título para outro texto, percebendo a presença de algum padrão. 
+".
 
 
 
