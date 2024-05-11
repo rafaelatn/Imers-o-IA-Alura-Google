@@ -1,4 +1,4 @@
-#### [↩Voltar para o Início](https://github.com/rafaelatn/Imersao-IA-Alura-Google/blob/main/README.md)
+#### [↩Voltar para o Início](https://github.com/rafaelatn/Imersao-IA-Alura-Google/tree/main?tab=readme-ov-file)
 ## 📝Minhas anotações - 06/05/24
 ## 1. IA Preditiva VS IA Generativa
 Enquanto IA Preditiva apenas aprende os **padrões** (como diferenciar a imagem de um gato e de um cachorro), a IA Generativa, além de aprender, os utiliza para gerar **novo contéudo**, ou seja, alimentar seu grafo.
