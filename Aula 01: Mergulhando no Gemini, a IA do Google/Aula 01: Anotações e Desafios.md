@@ -7,4 +7,4 @@ São as conexões que a IA Generativa faz entre seu glossário e o conteúdo apr
 
 >Exemplo: Na frase, *"Estou __ casa de Maria"*, as chances da preposição "na" ser recomendada é maior do que "em", já que sua conexão (probabilidade) é mais forte (maior) que a segunda preposição proposta.
 
-
+<p align="center"><img src="./images/grafo.jpg" width="500"/></p>
