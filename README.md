@@ -10,8 +10,6 @@ Repositório voltado para a documentação do evento!
 
 🛠 Ferramentas utilizadas
 
-🤖 Projeto Final 
-
 🙇🏼‍♀️ Agradecimentos 
 
    
@@ -31,8 +29,6 @@ O projeto tem como objetivo introduzir e ensinar os principais fundamentos da In
 - [Google AI Studio](https://aistudio.google.com)
 - [Google Colab](https://colab.google/)
   
-## 🤖 Projeto Final 
-
 ## 🙇🏼‍♀️ Agradecimentos 
 Agradeço à Alura pela oportunidade de expandir meus conhecimentos sobre Inteligência Artificial e tecnologia em geral, com um time estruturado e engajado na proposta. Agradeço também à alguns amigos da robótica, que me apoiaram e me ajudaram nessa jornada totalmente desconhecida.
 
