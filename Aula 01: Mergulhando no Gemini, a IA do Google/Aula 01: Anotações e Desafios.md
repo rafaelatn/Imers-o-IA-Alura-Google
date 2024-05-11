@@ -19,7 +19,7 @@ Filtros de conteúdo aplicados no Gemini, como: assédio, ódio, conteúdo expl�
 ## 5. Multimodalidade
 Possibilidade de inserir vários formatos de informação (dataset) em um comando (prompt), como: texto, vídeo, imagem.
 
-# Desafio 01
+# 👩🏼‍💻 Desafio 01
 >### "Utilizar o Gemini ou o Google IA Studio para facilitar algum trabalho do seu cotidiano".
 Para este desafio, aproveitei ter um trabalho escolar para apresentar e pedi para o Gemini gerar ideias de dinâmicas voltadas para a autogestão e que pudessem ser realizadas em sala de aula. Este foi o resultado:
 
@@ -105,7 +105,7 @@ Os alunos compartilham seus "kits" e as diferentes estratégias que utilizam.
 
 
 
-# Desafio 02
+# 👩🏼‍💻 Desafio 02
 >### "Trabalhar com os seus dados: obter planilha de seu histórico do Google com a extensão *Quick Chrome History Export* e pedir para o Gemini (ou Google IA Studio) resumir ela em - sites mais acessados, sua carga horária e sua finalidade. Peça também para ser gerado um relátorio sobre seu gerenciamento do tempo e como pode melhorar".
 Aqui, utilizei meu histórico do Google de uma semana. Segue-se o resultado:
 
@@ -163,3 +163,4 @@ Levante-se da sua mesa a cada hora para se alongar, caminhar e descansar seus ol
 Ao implementar essas sugestões, você poderá ter um melhor controle do seu tempo e usá-lo de forma mais eficiente para alcançar seus objetivos.
 
 # *Fim das anotações/ desafios do primeiro dia*
+#### [↩Voltar para o Início](https://github.com/rafaelatn/Imersao-IA-Alura-Google/tree/main?tab=readme-ov-file)
