@@ -20,7 +20,7 @@ O projeto tem como objetivo introduzir e ensinar os principais fundamentos da In
 
 
 ## 👩🏼‍💻 Assuntos abordados e desafios propostos
-- [Aula 01: Mergulhando no Gemini, a IA do Google](
+- [Aula 01: Mergulhando no Gemini, a IA do Google](https://github.com/rafaelatn/Imersao-IA-Alura-Google/blob/main/Aula%2001%3A%20Mergulhando%20no%20Gemini%2C%20a%20IA%20do%20Google/Aula%2001%3A%20Anota%C3%A7%C3%B5es%20e%20Desafios.md)
 - Aula 02: Melhores técnicas em Engenharia de Prompt
 - Aula 03: Explorando os parâmetros do Google IA Studio
 - Aula 04: Criando seu próprio chatbot com a Gemini API no Google Colab
