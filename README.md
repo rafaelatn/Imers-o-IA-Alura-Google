@@ -4,11 +4,9 @@ Repositório voltado para a documentação do evento!
 ## Índice
 🤔 O que é a Imersão IA Alura & Google?
 
-📚 Assuntos abordados em cada aula 
+👩🏼‍💻 Assuntos abordados e desafios propostos
 
 🛠 Ferramentas utilizadas
-
-👩🏼‍💻 Desafios práticos
 
 🤖 Projeto Final 
 
@@ -20,7 +18,7 @@ Repositório voltado para a documentação do evento!
 O projeto tem como objetivo introduzir e ensinar os principais fundamentos da Inteligência Artificial Generativa, desde Engenharia de Prompt até a criação de programas usando o Gemini. O evento ocorreu de 06/05/24 a 10/05/24, havendo lives de abertura, introdução ao Python e encerramento nos dias 03, 08 e 13 de maio, respectivamente. 
 
 
-## 📚 Assuntos abordados em cada aula
+## 👩🏼‍💻 Assuntos abordados e desafios propostos
 - Aula 01: Mergulhando no Gemini, a IA do Google
 - Aula 02: Melhores técnicas em Engenharia de Prompt
 - Aula 03: Explorando os parâmetros do Google IA Studio
@@ -31,9 +29,7 @@ O projeto tem como objetivo introduzir e ensinar os principais fundamentos da In
 - [Gemini](https://gemini.google.com/app)
 - [Google AI Studio](https://aistudio.google.com)
 - [Google Colab](https://colab.google/)
-- 
-
-## 👩🏼‍💻 Desafios práticos
+  
 ## 🤖 Projeto Final 
 
 ## 🙇🏼‍♀️ Agradecimentos 
