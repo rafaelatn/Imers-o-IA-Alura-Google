@@ -34,9 +34,10 @@ Quando os dados necessitam de uma precisão maior, enviamos o mesmo prompt vári
 
 # Desafio 01
 >### "Utilizar o Few-shot-Learning e o Chain-of-Thought para um problema do seu cotidiano".
-Para a técnica do "Few-shot-Learning", exemplifiquei para o Gemini (versão 1.5 Pro disponível no Google IA Studio) como queria que os textos que leio para treinar minha leitura em coreano fossem traduzidos:
 
 # Prompt Few-shot-Learning
+Para a técnica do "Few-shot-Learning", exemplifiquei para o Gemini (versão 1.5 Pro disponível no Google IA Studio) como queria que os textos que leio para treinar minha leitura em coreano fossem traduzidos:
+
 ```
 Coreano:안녕하세요! 민준입니다. 21 살이에요. 저는 부산에 태어났는데 서울에 살아요. 브라질을 만나고 싶어요. 브라질은 너무 아름답잖아요.저는 포르투갈어를 공부하지만 너무 어렵고 달라요. 아직 포르투갈어를 못해요.
 Português: Olá! Sou Minjun. Tenho 21 anos. Eu nasci em Busan, mas moro em Seoul. Quero conhecer o Brasil. O Brasil é muito bonito.Eu estou estudando português, mas é muito difícil e diferente. Ainda não consigo falar português.
@@ -124,7 +125,103 @@ A combinação da imagem com a trilha sonora escolhida cria uma atmosfera de for
 ---
 
 # Desafio 02
->### "Escolher seu site preferido de notícias, pegar nove textos com o título e as ensinar para a IA. Na décima notícia apresentada, apenas forneça o seu contéudo e pergunte qual seria um possível título tendo como base sua percepção de padrões. Além disso, peça para ela justificar sua escolha de manchete".
+>### "Escolher seu site preferido de notícias, pegar nove textos com o título e as ensinar para a IA. Na décima notícia apresentada, apenas fornecer o seu contéudo e perguntar qual seria um possível título tendo como base sua percepção de padrões. Além disso, pedir para ela justificar sua escolha de manchete".
+
+Para este desafio decidi utilizar as notícias do "the news". O jornal compartilha por email cerca de cinco manchetes por dia, então, escolhi as do dia 06/05/24 e 07/05/24.
+
+# Prompt
+```
+Analise os títulos e o conteúdo das noticias abaixo. Com base na sua análise, sugira um título para o décimo texto, explicando como chegou em tal conclusão e expondo os padrões percebidos.
+
+---
+
+Hamas aceita proposta de cessar-fogo que está longe do que Israel deseja.
+
+Um representante do Hamas disse que o grupo terrorista concordou com uma proposta de cessar-fogo apresentada por negociadores do Egito e Catar.O acordo faria com que os dois lados do conflito pausassem completamente os ataques na Faixa de Gaza por 42 dias no mínimo.Então a guerra vai acabar? Autoridades de Israel disseram que a proposta ainda está “longe das exigências do país”, principalmente porque não existe um consenso sobre a libertação de reféns.O assunto é prioridade do governo de Netanyahu. A inteligência israelense diz que, dos 240 sequestrados pelo Hamas nos ataques de 07/10, 128 civis continuam sob o poder dos terroristas.Autoridades de Israel, inclusive, dizem que o Hamas teria aceitado o cessar-fogo apenas para os israelenses serem vistos como a parte que se recusou a chegar a um compromisso.Ou seja, não existe perspectiva para o fim da guerra em Gaza — que já dura 7 meses. Mesmo assim, Israel enviou uma delegação ao Egito para continuar com as negociações.De olho na situação, os EUA mandaram até diretor da CIA para participar das conversas. Recentemente, o governo aprovou mais de US$ 20 bi para Israel, o que causou protestos nas universidades.Enquanto isso, os ataques continuam:🇵🇸 O Hamas atacou uma região de ajuda humanitária na fronteira de Israel e Gaza, fechando uma das principais passagens de suprimentos;🇮🇱 Depois de emitir uma ordem de evacuação para 100 mil civis palestinos, forças israelenses bombardearam a cidade de Rafah.
+
+---
+
+Desastre no RS gera impactos econômicos para todo o país.
+
+A maior enchente da história do Rio Grande do Sul retirou milhares de famílias de suas casas, destruiu partes de cidades e causou quase 100 mortes até agora, com mais de 350 cidades em estado de calamidade.Além de todo esse caos humanitário, que falamos ontem aqui, toda a tragédia impacta diretamente na economia — não só da região, mas de todo o país.Explicando: Para começo de conversa, o RS é responsável por nada menos que 58% de todo o arroz produzido no Brasil. Além disso, tem também 15% das lavouras de soja.Mas não para nas plantações… As inundações podem ter afetado ainda mais os frigoríferos e a pecuária. Pense que boa parte dos animais — porcos, bois, vacas — morreram com as enchentes.Estamos falando de bilhões de reais💰Com as unidades operacionais e de distribuição praticamente paradas, a perda deve ser grande.Usando como referência, apesar da causa ser totalmente diferente, a greve dos caminhoneiros de 2018 gerou prejuízo de R$ 3 bilhões na indústria nacional.Na época da paralisação, os preços de produtos básicos para o consumidor final subiram mais de 80%.Isso sem falar que, na atual situação, diversas estradas, pontes e rodovias — por onde toda essa produção escoa — desabaram. A restauração delas pode custar mais de R$ 1 bilhão para o governo.Além disso, o aeroporto Salgado Filho, em Porto Alegre, foi fechado por tempo indeterminado.Zoom out: Os prejuízos financeiros causados por desastres ambientais somaram mais de R$ 105 bilhões em 2023. Só as chuvas, no ano passado, incluindo o ciclone no RS, deixaram danos de R$ 51,4 bilhões.
+
+---
+
+O que a tecnológica AI tem a ver com o mercado de gás natural?
+
+Muito dado para pouca energia. Por mais contraditório ou aleatório que isso possa parecer, o mercado de gás natural tem muito a agradecer pelo boom da inteligência artificial.Pare para pensar: Com tanta informação para armazenar, as BIG TECHs têm feito investimentos multibilionários na construção de data centers — que, por sua vez, precisam de muita energia para funcionar.Caso você não saiba… Assim como a “nuvem” onde você guarda os seus arquivos, todos os dados que alimentam os chatbots de AI precisam, na verdade, de um espaço físico.Até 2030, o consumo energético dos data centers deve quase triplicar — passando de 11 para 42 gigawatts.Ao mesmo tempo, o gás natural parece ser o único meio que pode suprir tanta demanda — as fontes de energia limpa não estão dando conta.Com isso, o gás natural deve fornecer 60% da energia necessária para os data centers de AI nos próximos anos.A “era dourada” do gás. É assim que os produtores batizaram o movimento, já que a procura pela modalidade deve crescer em mais de 30% só nos EUA. Os preços podem aumentar 46% em 6 anos.O impacto ambiental 😷Apesar do nome ter uma vibe clean, ambientalistas criticam que o gás natural é um combustível fóssil que gera emissão de gases poluentes — ainda que em menor nível do que o petróleo.Os data centers são responsáveis por 45% dos gases de efeito estufa da indústria TECH. Com o gás natural, as emissões de CO₂ podem mais do que duplicar até 2030, chegando a 220 milhões de toneladas por ano.PS: No Brasil, os grandes data centers consomem quase a mesma quantidade de energia que o Tocantins inteiro.
+
+---
+
+Shein quer abocanhar mercado da Amazon — e vice-versa.
+
+A briga do e-commerce. A Shein quer basicamente virar a nova Amazon, expandindo para venda de mais produtos além de roupas, sapatos e acessórios.A ideia da gigante chinesa é fechar negócio com empresas como a Colgate/Palmolive, Hasbro e outras focadas em cuidados com a pele para ser um dos marketplaces dessas categorias.A gigante já tinha aberto espaço na plataforma para marcas e varejistas no ano passado.Um raio-x do movimento: Focando muito em tendências entre jovens, principalmente através do TikTok, a Shein já domina o mercado de roupas na internet.Para se ter uma ideia, em abril de 2022, a companhia foi avaliada em US$ 100 bilhões, mais que as concorrentes do fast fashion H&M e Zara juntas.Ainda assim, quando falamos de e-commerce como um todo, seus US$ 2 bilhões de lucro anual ainda ficam bem longe dos US$ 30 bi da Amazon.Enquanto isso, do outro lado…A Amazon, que detém 37% do mercado de varejo nos EUA, está fazendo o movimento contrário: quer vender e ampliar sua presença no mercado de roupas.Para isso, a BIG TECH está reduzindo as taxas de comissão para os vendedores do setor.Pense que, hoje, a Amazon tem uma vantagem clara em relação à Shein: entregas rápidas. Enquanto o Prime entrega em apenas 24h, os clientes da Shein costumam esperar até duas semanas paras os pedidos chegarem.
+
+---
+
+Grécia está criando cidade inteligente no melhor estilo Dubai.
+
+A maior smart city da Europa. A cidade de Ellinikon, a 20 minutos de Atenas, está saindo do papel e pretende gerar meros € 10 bilhões em receitas fiscais.A planta começou a ser criada há mais de 10 anos, usando o terreno onde ficava um antigo aeroporto da Grécia.💰 Foco no χρήματα (dinheiro): Como os prédios modernos estão sendo construídos, a grande empresa imobiliária por trás da criação da cidade já vendeu € 641 milhões em apartamentos.Por que cidade inteligente? A tendência é que as metrópoles que tenham infraestrutura, transporte e espaços públicos integrados à tecnologia para aumentar os benefícios e qualidade de vida do cidadão apareçam e cresçam cada vez mais.A moderna Dubai, por exemplo, está no topo da lista das cidades onde as pessoas querem morar e trabalhar.Em números, o mercado de smart cities foi avaliado em US$ 600 bilhões em 2023 e tem projeção de crescer 25% por ano até 2029.Só na Grécia, o esperado é que a cidade adicione 2,5 pontos ao PIB, com a criação de 80 mil novos empregos — ajudando o país a sair de uma crise econômica.🌎 Ao todo, 142 cidades do mundo são consideradas smart cities. Para surpresa do estagiário, das 10 mais bem ranqueadas, 7 ficam na Europa. Clique para ver.O que mais foi relevante no mundo da economia?Disputada ela… Paramount busca negociações com Sony/Apollo e SkydanceProjeção da Selic: Possível desaceleração dos cortes divide mercado, com taxa a 10,5% em maioFechou a R$ 5,07. Dólar e Ibovespa fecham na estabilidade, enquanto Bolsas em NY disparam. 
+
+---
+
+O sonho da casa própria parece distante para os americanos.
+
+Dependentes dos aluguéis. Apenas 13% dos inquilinos americanos acreditam que um dia vão conseguir comprar uma casa — uma mínima histórica para esse número.Em contrapartida, 74% de quem mora de aluguel acredita que comprar um imóvel é algo difícil, vendo a casa própria como algo distante da realidade.Por que isso importa? Esse é mais um reflexo das atuais altas taxas de juros, que estão no patamar de 5,25% e 5,5%, o nível mais alto em 23 anos.Pense que os juros são o custo do dinheiro. Logo, o impacto direto disso é que pegar empréstimos e financiamentos fica mais caro, afastando o americano dessa possibilidade.Talking numbers: Em 2022, quando as taxas passaram a subir consideravelmente, visando controlar a inflação, o número de pedidos de empréstimos caiu 44% na terra do Tio Sam.🏘️ O preço médio de uma casa em 2023 está em um nível recorde, chegando a quase US$ 400 mil dólares no ano passado.Ao mesmo tempo, espera-se que o custo do aluguel aumente quase 10% no próximo ano, mesmo com as perspectivas de que o Fed diminua os juros. Nem o aluguel tá fácil…Nota de rodapé: Os mais prejudicados são os jovens, que estão deixando a casa dos pais mais tarde. “Bem na minha vez de ser adulto…”.
+
+---
+
+As atualizações da maior catástrofe do Rio Grande do Sul.
+
+Mobilização nacional. Diante da tragédia causada pelas fortes chuvas no Rio Grande do Sul, o Congresso decretou calamidade pública no estado até o final do ano.Isso significa que, agora, o governo federal pode enviar recursos ao RS sem se preocupar com as regras fiscais que limitam os gastos da União.A preocupação com os gaúchos e os recursos para o estado aumentaram com os últimos desdobramentos da tragédia:O número de vítimas subiu para 95, e o de afetados para 1,5 milhão;Cidades do sul do estado estão em alerta de “perigo extremo de tempestades”;Porto Alegre está em racionamento e 85% da população está sem água;A Marinha enviou o maior navio de guerra da América Latina para o estado;Um jacaré chegou a ser visto nas ruas de um bairro de Porto Alegre.A corrente do bem faz a diferença 🤝Uma verdadeira onda de apoio se formou no Brasil inteiro diante da repercussão da catástrofe:💰 O SOS Rio Grande do Sul recebeu mais de R$ 38M em doações; a maior vaquinha que vimos, do @badincolono, já arrecadou mais de R$ 51M;🏄‍♂️ Surfistas se mobilizaram e ajudaram a resgatar 200 crianças de regiões alagadas;⛑️ A equipe de ajuda emergencial realizou o salvamento de mais de 20 mil pessoas nos últimos dias;🦮 Mais de 6 mil animais foram resgatados em áreas inundadas;🚰 Fábricas de cerveja tiveram a produção paralisada para envasar água potável.
+
+---
+
+O app de músicas que é “bom demais pra ser verdade”.
+
+Um app gratuito com faixas dos maiores artistas do mundo e que não tem anúncios no meio da música. Esse é o Musi, que virou queridinho da Gen Z neste ano.A “magia” do Musi, na verdade, não é tão mágica assim. Ele basicamente funciona como um player de vídeos que já estão no YouTube, com a diferença de que é possível organizá-los em playlists.Esse modelo de negócio fez a empresa faturar US$ 107 milhões só na América do Norte nos últimos dois anos.🤔 E como eles ganham dinheiro? Anúncios. A diferença é que eles são silenciosos e podem ser fechados em 15 segundos. Assim, as músicas não são interrompidas e nem existe um limite de plays. Uma versão ads-free está disponível por US$ 6.O Musi já foi baixado 66M de vezes desde o lançamento, sendo 8,5M só no ano passado. Isso é mais do que os concorrentes Deezer e Pandora.Com todo esse boom, gravadoras e empresários da música já mostraram resistência, dizendo que o business praticado pelo Musi é ilegal.Isso porque o app não tem licença para retransmitir os vídeos do YouTube, além de não remunerar os artistas, nem pagar direitos autorais, como fazem Spotify, Deezer e outros streamings — movimentando US$ 29 bi por ano.O outro lado: A defesa do app diz que não há nada de errado, já que ele apenas disponibiliza os vídeos, sem permitir o download deles.
+
+---
+
+Mr Beast se separou da empresa por trás dos seus negócios.
+
+Cortou relações. Depois de 6 anos trabalhando com a Night Media, o maior youtuber do mundo terminou seu relacionamento com a sua “gestora de talentos”.Talvez você não saiba, mas por trás de diversos canais de YouTube há uma terceira empresa que monta todo o business — deixando o influenciador focado na parte mais criativa da coisa.Fazendo um paralelo, é como se o Casimiro abrisse mão da parceria com a LiveMode, que é a empresa por trás da CazéTV.O motivo por trás: O creator de 26 anos — sim, o Mr Beast só tem 26 anos — quer ter mais controle nos negócios, que hoje tem uma receita anual de U$ 700 milhões, criando seu próprio time interno.Pra se ter uma ideia, além de ter o maior canal do YouTube do planeta, com 256 milhões de inscritos, ele também tem sua marca de doces Feastables e da rede de fast food MrBeast Burguer.O movimento mostra a tendência de criadores de conteúdo de buscarem mais autonomia, à medida que seus negócios vão muito além do conteúdo — passando a ter produtos e marcas próprias envolvidas.Zoom out: O mercado de creators global já tem uma média de 300 milhões de criadores de conteúdo, valendo cerca de US$ 250 bilhões globalmente, e podendo dobrar em 4 anos.
+
+---
+
+Mirando o mercado internacional, a brasileira Suzano fez uma oferta de US$ 15 bilhões para comprar a americana International Paper.A proposta é realmente grande. A Suzano é a empresa de papel e celulose #1 do Brasil, enquanto a IP é maior do mundo no ramo — sim, a brasileira está tentando comprar um ativo maior do que ela mesma.Tanto que, para sustentar a oferta, que vai ser toda em dinheiro e à vista, a empresa está negociando um financiamento. Para se ter uma ideia, só o valor de mercado da Suzano é de cerca de US$ 15 bi.Presença global: Se a IP concordar em vender seus ativos, a Suzano tem o potencial de se tornar um grupo super relevante no comércio global de embalagens de papel, atuando nos 5 continentes.No Brasil, a empresa ficaria com as duas maiores marcas de papel A4 do país: a Report, que já é sua, e a Chamex, que é da IP.By the numbers: Depois do boom da pandemia, o mercado de papel e celulose movimenta, hoje, mais de US$ 350 bilhões no mundo todo.📉 A Faria Lima não curtiu… Enquanto as ações da IP subiram, as da Suzano caíram 10% depois da notícia. A análise foi de que a empresa pode estar tentando dar um passo maior do que a própria perna. Cenas para os próximos capítulos…
+
+```
+# Resposta
+**Sugestão de título para o décimo texto:**
+
+## *Suzano mira expansão global com oferta bilionária pela líder do mercado International Paper*
+
+**Justificativa:**
+Analisei os títulos e conteúdos das notícias anteriores e identifiquei alguns padrões:
+
+**Foco no impacto:** Os títulos geralmente destacam o impacto ou consequência principal do evento noticiado.
+
+**Clareza e concisão:** Os títulos são curtos, diretos e informativos, evitando jargões ou termos complexos.
+
+**Uso de números:** Quando relevante, os títulos utilizam números para quantificar o impacto do evento, como valores monetários ou porcentagens.
+
+**Menção das empresas envolvidas:** Quando se trata de negócios ou fusões, os títulos costumam mencionar as empresas envolvidas.
+Com base nesses padrões, o título sugerido acima destaca o principal objetivo da Suzano (expansão global) e o meio pelo qual ela pretende atingir esse objetivo (oferta bilionária pela International Paper), além de mencionar ambas as empresas envolvidas na negociação.
+
+
+**Padrões percebidos nos títulos:**
+
+
+**Ação + Objetivo/Consequência:** Vários títulos seguem a estrutura de mencionar a ação principal seguida do objetivo ou consequência, como "Hamas aceita proposta de cessar-fogo" e "Shein quer abocanhar mercado da Amazon".
+
+**Local + Evento:** Alguns títulos especificam a localização geográfica do evento, como "Desastre no RS gera impactos econômicos" e "Grécia está criando cidade inteligente".
+
+**Problema + Impacto:** Em alguns casos, os títulos destacam um problema e seu impacto, como "O sonho da casa própria parece distante para os americanos" e "As atualizações da maior catástrofe do Rio Grande do Sul".
+
+**Conclusão:**
+O título sugerido para o décimo texto segue os padrões identificados nas notícias anteriores, sendo claro, conciso e informativo, ao mesmo tempo em que destaca o impacto e as empresas envolvidas na notícia.
+
 
 
 
