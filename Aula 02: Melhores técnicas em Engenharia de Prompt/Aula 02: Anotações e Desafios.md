@@ -1,21 +1,19 @@
 #### [↩Voltar para o Início](https://github.com/rafaelatn/Imersao-IA-Alura-Google/tree/main?tab=readme-ov-file)
 ## 📝Minhas anotações - 07/05/24
 ## 1. Sobre os prompts
-Prompt = comando. Seja claro com suas instruções para a IA. Quanto mais específico seu prompt, melhor será a resposta dada.
+Prompt = comando. Seja claro com suas instruções para a IA. Quanto mais específico seu prompt, melhor será a resposta dada. 
 
-## Alucinação
+## 2. Alucinação
 A alucinação da IA acontece quando não há um bom direcionamento para a tarefa solicitada. Existe duas situações de alucinação: 
 
 1. **Grafo da IA forte (muita informação aprendida sobre o tema do comando) para pouco prompt.** Exemplo: Perguntar para IA qual foi o primeiro elefante a pisar na Lua. A resposta conterá fatos verídicos sobre o evento misturados com fictícios, inventados para preencher os "furos" da realidade.
-2. **Grafo da IA fraco (pouca informação apreendida sobre o tema do comando) para prompt robusto.** Exemplo: Perguntar sobre a vida de uma subcelebridade, talvez conhecida na sua região, mas, não mundialmente.
+2. **Grafo da IA fraco (pouca informação aprendida sobre o tema do comando) para prompt robusto.** Exemplo: Perguntar sobre a vida de uma subcelebridade, talvez conhecida na sua região, mas, não mundialmente.
 
-Nestes casos, a solução será pedir a **justificativa** das respostas dadas.
-
-<p align="center"> <img width="500" src="/images/grafos.jpg"></p>
+### Nestes casos, a solução será pedir a *justificativa* das respostas dadas.
 
 ## 3.Tipos de Prompt
 
->🚨 Exemplos mostrando como eles funcionam serão apresentados nos desafios.
+>🚨 Aqueles que não forem exemplificados nesta parte serão apresentados nos desafios propostos.
 
 ### Zero-shot-Prompting
 É o comando que não possui nenhuma referência de como a resposta deve ser gerada. 
@@ -24,7 +22,7 @@ Nestes casos, a solução será pedir a **justificativa** das respostas dadas.
 É o comando que possui alguma referência para a geração da resposta. Quando utilizamos esta estratégia de prompt, mostramos para a IA, com dados irrelevantes para o verdadeiro projeto, o estilo de comando a ser feito e também o padrão de resposta desejada.
 
 ### Chain-of-Thought
-No comando, a cadeia de pensamento será construída a partir da divisão da tarefa maior em menores, detalhando cada passo a ser dado como o raciocínio humano faz.
+A cadeia de pensamento será construída no momento de escrita do comando, em que a tarefa será dividida em partes menores e detalhada  passo a passo, como o raciocínio humano faz diariamente.
 
 ### Least-to-Most-Prompting
 Aqui, o prompt com a problemática será dividido pela própria IA, que solucionará das menores para as maiores tarefas.
@@ -32,148 +30,76 @@ Aqui, o prompt com a problemática será dividido pela própria IA, que solucion
 ### Self Consistency
 Quando os dados necessitam de uma precisão maior, enviamos o mesmo prompt várias vezes para gerar diversas respostas e então pedimos para que a IA avalie a sua consistência.
 
-
 # Desafio 01
 >### "Utilizar o Few-shot-Learning e o Chain-of-Thought para um problema do seu cotidiano".
-Para este desafio, aproveitei ter um trabalho escolar para apresentar e pedi para o Gemini gerar ideias de dinâmicas voltadas para a autogestão e que pudessem ser realizadas em sala de aula. Este foi o resultado:
+Para a técnica do "Few-shot-Learning", exemplifiquei para o Gemini (versão 1.5 Pro disponível no Google IA Studio) como queria que os textos que leio para treinar minha leitura em coreano fossem traduzidos:
 
-|Prompt|
-|------|
-|Crie sugestões de dinâmicas em grupo para aplicar em sala de aula voltadas para a autogestão em situações estressantes, de alta tensão.|
+# Prompt Few-shot-Learning
+```
+Coreano:안녕하세요! 민준입니다. 21 살이에요. 저는 부산에 태어났는데 서울에 살아요. 브라질을 만나고 싶어요. 브라질은 너무 아름답잖아요.저는 포르투갈어를 공부하지만 너무 어렵고 달라요. 아직 포르투갈어를 못해요.
+Português: Olá! Sou Minjun. Tenho 21 anos. Eu nasci em Busan, mas moro em Seoul. Quero conhecer o Brasil. O Brasil é muito bonito.Eu estou estudando português, mas é muito difícil e diferente. Ainda não consigo falar português.
 
-|Resposta|
-|--------|
-|**Dinâmicas em grupo para autogestão em situações estressantes:**
-**Objetivo:** Desenvolver habilidades de autogestão em situações de alta tensão e estresse, promovendo a inteligência emocional, comunicação assertiva e resolução de conflitos.
-**Público:** Alunos do ensino fundamental, médio, superior ou adultos em geral.
-**Duração:** 30-60 minutos por dinâmica (adaptável).
-**Materiais:** Variáveis, como cartolinas, canetas, post-its, bolas de stress, vendas, etc.
-**Exemplos de Dinâmicas:**|
-                                       
-## **1. "Tempestade Cerebral":**
-**Descrição:** Simulação de uma situação estressante em grupo, seguida de brainstorming de soluções.
+Coreano: 숲에서 토끼가 산책하고 있어요. 그는 그의 친구들을 봤어요. 그는 배가 고파서 정원에서 그는 당근과 딸기를 먹었어요. 그는 나무에서 새들이랑 노래해요. 푸른색 호수에서 그와 물고기들은 수영해요. 긴 하루였어요! 오늘 밤 그는 푹 잘 거예요.	
+Português: O coelho está caminhando pela floresta. Ele encontrou seus amigos. Como estava com fome, comeu uma cenoura e um morango do jardim. Perto da árvore, ele cantou com os pássaros. No lago azul, ele nadou com os peixes. Foi um dia longo! Ele vai dormir muito bem esta noite.
 
-**Passo a passo:**
-Divida a turma em grupos de 4-5 pessoas.
-Apresente um cenário fictício de alta tensão, como um problema urgente para resolver, uma apresentação com pouco tempo de preparo, etc.
-Cada grupo tem 10 minutos para propor soluções criativas e eficientes para lidar com a situação.
-Os grupos compartilham suas soluções e discutem a viabilidade e os pontos fortes e fracos de cada uma.
+Coreano: 산골 마을에 홀어머니와 오누이가 살고 있었다.하루는 어머니가 산 너머에 있는 잔칫집에 일을 하러 갔다.어머니가 일을 마치고 돌아오는데 어디선가 커다란 호랑이가 나타났다.
+Português:
+```
+# Resposta
 
-**Resultados:** Estimula a criatividade, trabalho em equipe e pensamento estratégico sob pressão.
+Português: Uma mãe viúva e seus dois filhos viviam em uma aldeia nas montanhas. Um dia, a mãe foi trabalhar em uma festa do outro lado da montanha. Quando a mãe estava voltando do trabalho, um grande tigre apareceu de algum lugar.
 
 ---
-## **2. "Eu no Espelho":**
-**Descrição:** Autoconhecimento e identificação de gatilhos emocionais.
+# Prompt Chain-of-Thought
 
-**Passo a passo:**
-Cada aluno escreve em um papel 3 situações que lhe causam estresse e como costuma reagir (físico e emocionalmente).
-Em duplas, os alunos compartilham suas experiências e como se sentem em cada situação.
+Tendo o mesmo problema do meu cotidiano em mente (tradução de textos em idiomas diferentes), utilizei a técnica "Chain-of-Thought" para explicar, passo a passo, o que queria que fosse feito com o trecho de uma história coreana.
 
-**Reflexão:** O que você aprendeu sobre si mesmo? Quais gatilhos emocionais você identificou?
+```
+옛날 어느 마을에 가난한 노부부가 살고 있었다.이 부부에게는 자식이 없었다.어느 날 할아버지는 산에 갔다.산에서 나무를 했다.
+한참 나무를 한 후에 할아버지는 힘들어서 쉬고 있었다.그 때 새 소리가 들려왔다.할아버지는 새를 잡고 싶어서 그 새를 따라갔다.
+깊은 숲속으로 그 새를 따라갔다.할아버지는 목이 말랐다.곧 샘물을 찾았다.물을 마시자마자 할아버지는 잠이 들었다.
+1- Analise o texto acima;
+2- Traduza para o português e o inglês;
+3- Crie, em português, uma tabela com os principais tópicos exibidos na história;
+4- Identifique o nível necessário para a sua total compreensão e considerações finais.
+```
+# Resposta
 
-**Resultados:** Promove o autoconhecimento, identificação de gatilhos e desenvolvimento da inteligência emocional.
+## Análise do Texto
 
----
-## **3. "Comunicação Assertiva: O Jogo das Reclamações":**
+**1. Análise**
+O texto apresenta uma narrativa em coreano que parece ser o início de um conto tradicional. Elementos como um casal de idosos sem filhos e um cenário rural sugerem um contexto folclórico. A narrativa introduz um conflito potencial ao colocar o personagem principal (o avô) em uma situação inesperada, adormecendo após beber água de uma fonte misteriosa na floresta.
 
-**Descrição:** Treinar a comunicação assertiva em situações de conflito.
+**2. Traduções**
 
-**Passo a passo:**
-Crie um "banco de reclamações", com frases como "Você está falando muito alto", "Este trabalho está mal feito", etc.
-Em duplas, os alunos se revezam na escolha de uma reclamação e praticam a comunicação assertiva, expressando seu desconforto de forma respeitosa e propondo soluções.
-A turma observa e discute a efetividade da comunicação em cada caso.
+*Português:*
+> Era uma vez, em uma certa vila, um velho casal pobre que vivia. Este casal não tinha filhos.
+Um dia, o avô foi para a montanha. Ele cortou lenha na montanha. Depois de cortar lenha por um tempo, o avô estava cansado e descansando. Naquele momento, ele ouviu o som de um pássaro. O avô queria pegar o pássaro, então ele o seguiu.
+Ele o seguiu até a floresta profunda. O avô estava com sede. Logo ele encontrou uma fonte. Assim que bebeu a água, o avô adormeceu.
 
-**Resultados:** Desenvolve a comunicação assertiva, o respeito mútuo e a resolução de conflitos de forma construtiva.
+*Inglês:*
+> Once upon a time, in a certain village, there lived a poor old couple. This couple had no children. One day, the grandfather went to the mountain. He chopped wood in the mountain. After chopping wood for a while, the grandfather was tired and resting. At that moment, he heard the sound of a bird. The grandfather wanted to catch the bird, so he followed it. He followed it deep into the forest. The grandfather was thirsty. Soon he found a spring. As soon as he drank the water, the grandfather fell asleep.
+> 
+**3. Tabela de Tópicos**
+   
+| Tópico | Descrição |
+|--------|-----------|
+|Cenário | Vila rural|
+| Personagens	| Casal de idosos sem filhos |
+|Conflito |	Avô adormece após beber água de uma fonte misteriosa |
+|Tema	| Folclore/conto tradicional |
+|Possíveis temas secundários |	Pobreza, desejo por filhos, mistério |
 
----
-## **4. "Respiração Consciente":**
+**4. Nível e Considerações**
+   
+**Nível de dificuldade:** Iniciante a Intermediário
 
-**Descrição:** Técnicas de respiração para controle do estresse e ansiedade.
-
-**Passo a passo:**
-Introduzir diferentes técnicas de respiração, como a respiração diafragmática, a contagem 4-7-8 e a respiração quadrada.
-Prática guiada de cada técnica, com foco na percepção corporal e no relaxamento.
-Os alunos podem compartilhar suas experiências e como se sentiram após a prática.
-
-**Resultados:** Promove o relaxamento, diminui a ansiedade e ensina ferramentas práticas para lidar com o estresse.
-
----
-## **5. "Caixa de Ferramentas Anti-Estresse":**
-
-**Descrição:** Criar um "kit" pessoal de estratégias para lidar com situações estressantes.
-
-**Passo a passo:**
-Cada aluno cria uma caixa ou um cartaz intitulado "Minha Caixa de Ferramentas Anti-Estresse".
-Dentro da caixa, o aluno coloca imagens, frases, objetos ou atividades que o ajudem a lidar com o estresse e a se acalmar (música, exercícios, hobbies, etc.).
-Os alunos compartilham seus "kits" e as diferentes estratégias que utilizam.
-
-**Resultados:** Estimula a criatividade, a busca por soluções individuais e a criação de um plano de ação personalizado para lidar com o estresse.
-
----
-**Dicas:**
-- Adapte as dinâmicas à faixa etária e ao contexto da turma.
-- Utilize materiais visuais, jogos e recursos criativos para tornar as atividades mais engajadoras.
-- Crie um ambiente seguro e acolhedor para que os alunos se sintam à vontade para compartilhar suas experiências e dificuldades.
-- Incentive a participação de todos, valorizando as diferentes perspectivas e soluções.
-- Lembre-se: As dinâmicas são ferramentas que podem auxiliar no desenvolvimento da autogestão, mas o aprendizado se consolida através da prática e da aplicação dessas habilidades no dia a dia.
-
-
+O texto utiliza vocabulário e estruturas gramaticais relativamente simples. No entanto, algumas palavras e expressões podem ser desconhecidas para iniciantes completos, como "노부부" (casal de idosos) ou "샘물" (fonte).
+Considerações finais:
+O texto apresenta um início interessante para uma história com potencial para explorar temas como a vida rural, a solidão e o sobrenatural. Seria interessante continuar a leitura para descobrir o que acontece com o avô após adormecer e quais são as consequências de sua ação.
 
 # Desafio 02
 >### "Trabalhar com os seus dados: obter planilha de seu histórico do Google com a extensão *Quick Chrome History Export* e pedir para o Gemini (ou Google IA Studio) resumir ela em - sites mais acessados, sua carga horária e sua finalidade. Peça também para ser gerado um relátorio sobre seu gerenciamento do tempo e como pode melhorar".
-Aqui, utilizei meu histórico do Google de uma semana. Segue-se o resultado:
 
-|Prompt|
-|------|
-|Crie uma tabela com as seguintes colunas: sites mais utilizados, horas de uso e sua finalidade. Depois, faça um relatório com suas conclusões sobre meu gerenciamento de tempo e como posso melhorar.|
 
-## Resposta
-**Análise de Uso do Tempo Baseada no Histórico de Navegação**
 
-Aqui está a tabela que você solicitou com os sites mais utilizados, horas de uso e finalidade:
-
-|Site Mais Utilizado	| Horas de Uso (Estimadas) |	Finalidade |
-|--------------------|--------------------------|-------------|
-|YouTube	| 10+	| Entretenimento, Educação |
-|Google AI Studio	| 4- 6 | Trabalho, Educação |
-|Gmail | 3-5 |	Comunicação |
-|Google Search	| 3-5 |	Pesquisa, Navegação |
-
-## **Conclusões e Sugestões para Melhorar o Gerenciamento de Tempo**
-
-Com base na análise do seu histórico de navegação, podemos tirar algumas conclusões e sugestões para melhorar o seu gerenciamento de tempo:
-
-### **Pontos Fortes:**
-
-**Foco em educação e trabalho:** 
-Uma parte significativa do seu tempo online é dedicada a plataformas educacionais como Alura e Google AI Studio, e ferramentas de trabalho como GitHub e Planilhas Google. Isso demonstra um compromisso com o aprendizado e desenvolvimento profissional.
-
-**Utilização de ferramentas de organização:**
-O uso do Notion indica um esforço para se manter organizado e gerenciar tarefas.
-
-### **Pontos a Melhorar:**
-
-**Tempo excessivo em entretenimento:** 
-O YouTube parece ser o site mais utilizado, possivelmente consumindo um tempo considerável que poderia ser direcionado para outras atividades.
-
-**Distrações online:**  A frequência de uso do Google Search e a visita a sites como Pinterest e Shopee sugerem possíveis distrações online.
-
-## **Sugestões:**
-
-**Estabelecer limites para o uso de redes sociais e entretenimento:**
-Defina um tempo específico por dia para o uso do YouTube e outras plataformas de entretenimento.
-
-**Utilizar ferramentas de bloqueio de sites:**
-Experimente aplicativos ou extensões de navegador que bloqueiam o acesso a sites distrativos durante determinados períodos.
-
-**Priorizar tarefas:** 
-Utilize ferramentas de organização como o Notion para definir prioridades e organizar suas atividades diárias.
-
-**Fazer pausas regulares:**
-Levante-se da sua mesa a cada hora para se alongar, caminhar e descansar seus olhos.
-
-**Ser mais consciente do seu tempo:** Avalie como você está gastando seu tempo online e busque maneiras de otimizar suas atividades.
-
-Ao implementar essas sugestões, você poderá ter um melhor controle do seu tempo e usá-lo de forma mais eficiente para alcançar seus objetivos.
-
-# *Fim das anotações/ desafios do primeiro dia*
