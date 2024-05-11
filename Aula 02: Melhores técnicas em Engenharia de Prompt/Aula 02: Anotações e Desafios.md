@@ -103,7 +103,7 @@ O texto apresenta um início interessante para uma história com potencial para 
 ---
 # Prompt Extra (Zero-shot-Prompting)
 
-Utilizamos esta técnica sem mesmo perceber e o exemplo que darei agora mostra isso. **Pequeno contexto:** estava testando as funções do Google IA Studio e acabei pedindo para ela analisar uma foto minha em uma corrida sem exemplificar a resposta nem detalhar os passos a seguir.
+Utilizamos esta técnica sem mesmo perceber e o exemplo que darei agora mostra isso. **Pequeno contexto:** estava testando as funções do Google IA Studio e acabei pedindo para ela analisar uma foto minha em uma corrida sem exemplificar a resposta desejada nem detalhar os passos a serem seguidos.
 
 ```
 (Imagem subida para a IA)
@@ -124,8 +124,7 @@ A combinação da imagem com a trilha sonora escolhida cria uma atmosfera de for
 ---
 
 # Desafio 02
->### "Escolher seu site preferido de notícias, pegar dez textos com o título e ensinar a IA. “Dado este texto, tenho esse título de notícias” por 10x, na 11x, perguntar qual seria o título para outro texto, percebendo a presença de algum padrão. 
-".
+>### "Escolher seu site preferido de notícias, pegar nove textos com o título e as ensinar para a IA. Na décima notícia apresentada, apenas forneça o seu contéudo e pergunte qual seria um possível título tendo como base sua percepção de padrões. Além disso, peça para ela justificar sua escolha de manchete".
 
 
 
