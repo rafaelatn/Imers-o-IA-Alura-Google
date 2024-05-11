@@ -32,7 +32,7 @@ Quando os dados necessitam de uma precisão maior, enviamos o mesmo prompt vári
 
 --- 
 
-# Desafio 01
+# 👩🏼‍💻 Desafio 01
 >### "Utilizar o Few-shot-Learning e o Chain-of-Thought para um problema do seu cotidiano".
 
 # Prompt Few-shot-Learning
@@ -124,10 +124,10 @@ A combinação da imagem com a trilha sonora escolhida cria uma atmosfera de for
 
 ---
 
-# Desafio 02
+# 👩🏼‍💻 Desafio 02
 >### "Escolher seu site preferido de notícias, pegar nove textos com o título e as ensinar para a IA. Na décima notícia apresentada, apenas fornecer o seu contéudo e perguntar qual seria um possível título tendo como base sua percepção de padrões. Além disso, pedir para ela justificar sua escolha de manchete".
 
-Para este desafio decidi utilizar as notícias do "the news". O jornal compartilha por email cerca de cinco manchetes por dia, então, escolhi as do dia 06/05/24 e 07/05/24.
+Para este desafio decidi utilizar as notícias do "the news". O jornal compartilha por email cerca de cinco manchetes por dia, então, escolhi as do dia 07/05/24 e 08/05/24.
 
 # Prompt
 ```
@@ -222,6 +222,11 @@ Com base nesses padrões, o título sugerido acima destaca o principal objetivo 
 **Conclusão:**
 O título sugerido para o décimo texto segue os padrões identificados nas notícias anteriores, sendo claro, conciso e informativo, ao mesmo tempo em que destaca o impacto e as empresas envolvidas na notícia.
 
+> ## Manchete verdadeira: *Suzano quer comprar a maior empresa de papel e celulose do mundo*
 
+---
+
+# *Fim das anotações/ desafios do dia dois.*
+#### [↩Voltar para o Início](https://github.com/rafaelatn/Imersao-IA-Alura-Google/tree/main?tab=readme-ov-file)
 
 
