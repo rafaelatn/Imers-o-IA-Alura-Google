@@ -23,7 +23,7 @@ O projeto tem como objetivo introduzir e ensinar os principais fundamentos da In
 - [Aula 03: Explorando os parâmetros do Google IA Studio](https://github.com/rafaelatn/Imersao-IA-Alura-Google/blob/main/Aula%2003%3A%20Explorando%20os%20par%C3%A2metros%20do%20Google%20IA%20Studio/Aula%2003%3A%20Anota%C3%A7%C3%B5es%20e%20Desafios.md)
 - [Aula 04: Criando seu próprio chatbot com a Gemini API no Google Colab](https://github.com/rafaelatn/Imersao-IA-Alura-Google/blob/main/Aula%2004:%20Criando%20seu%20pr%C3%B3prio%20chatbot%20com%20a%20Gemini%20API%20no%20Google%20Colab/Aula%2004:%20Anota%C3%A7%C3%B5es%20e%20Desafios.md)
 - [Aula 05: Criando um sistema para busca em documentos usando embeddings e a Gemini API](https://github.com/rafaelatn/Imersao-IA-Alura-Google/blob/main/Aula%2005%3A%20Criando%20um%20sistema%20para%20busca%20em%20documentos%20usando%20embeddings%20e%20a%20Gemini%20API/Aula%2005%3A%20Anota%C3%A7%C3%B5es%20e%20Desafios.md)
-
+- [Introdução ao Python - Live](https://github.com/rafaelatn/Imersao-IA-Alura-Google/tree/main/Introdu%C3%A7%C3%A3o%20ao%20Python%20-%20Live)
 ## 🛠 Ferramentas utilizadas
 - [Gemini](https://gemini.google.com/app)
 - [Google AI Studio](https://aistudio.google.com)
