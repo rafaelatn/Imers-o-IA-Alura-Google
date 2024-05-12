@@ -9,7 +9,9 @@
 Tecnologia que lida com imagens e vídeos, identificando objetos com precisão.
 
 ## 3. System Instructions no Google AI Studio
-Local em que é possível ditar o comportamento da IA, alguma característica que irá aparecer em todos os prompts. Exemplo: Dizer para o Gemini analisar os comandos como um analista de dados, de maneira analítica. Ou criar um anúncio criativo para turismo, como um profissional de marketing.
+Local em que é possível ditar o comportamento da IA, alguma característica que irá aparecer em todos os prompts. 
+
+**Exemplo:** Dizer para o Gemini analisar as informações como um analista de dados, de maneira analítica. Ou criar um anúncio criativo para turismo, como um profissional de marketing.
 
 ## 4. Temperatura
 Disponível na versão 1.0 Pro do Google IA Studio, a função irá determinar a "criatividade" das respostas do Gemini. Basicamente, quanto maior for a temperatura (máximo 1) maior será a variedade de respostas, e quanto mais baixa (máximo 0), as respostas dadas serão mais objetivas e sua formatação não mudará, independentemente de quantas vezes repita o prompt.
