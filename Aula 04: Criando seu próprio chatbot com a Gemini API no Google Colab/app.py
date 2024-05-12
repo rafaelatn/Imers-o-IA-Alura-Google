@@ -33,6 +33,7 @@ model = genai.GenerativeModel(model_name='gemini-1.0-pro',
 # gerando resposta
 response = model.generate_content('INSERT_YOUR_PROMPT')
 print(response.text)
+
 # construindo chat
 chat = model.start_chat(history=[])
 
