@@ -1,4 +1,4 @@
-# Instalando Gemini
+#Instalando Gemini
 !pip install -U -q google-generativeai
 
 #Importações e configurações iniciais
@@ -43,7 +43,7 @@ DOCUMENT3 = {
 
 documents = [DOCUMENT1, DOCUMENT2, DOCUMENT3]
 
-# Criando dataframe
+#Criando dataframe
 df = pd.DataFrame(documents)
 df.columns = ["Titulo", "Conteudo"]
 df
@@ -56,11 +56,11 @@ def embed_fn(title, text):
                                  title=title,
                                  task_type="RETRIEVAL_DOCUMENT")["embedding"]
 
-# Adicionando coluna no dataframe
+#Adicionando coluna no dataframe
 df["Embeddings"] = df.apply(lambda row: embed_fn(row["Titulo"], row["Conteudo"]), axis=1)
 df
 
-# Definindo função "gerar_e_buscar_consulta"
+#Definindo função "gerar_e_buscar_consulta"
 def gerar_e_buscar_consulta(consulta, base, model):
   embedding_da_consulta = genai.embed_content(model=model,
                                  content=consulta,
@@ -68,24 +68,24 @@ def gerar_e_buscar_consulta(consulta, base, model):
 
   produtos_escalares = np.dot(np.stack(df["Embeddings"]), embedding_da_consulta)
 
-# Criando índice
+#Criando índice
   indice = np.argmax(produtos_escalares)
   return df.iloc[indice]["Conteudo"]
 
-# Gerando consulta
+#Gerando consulta
 consulta = "Como faço para trocar marchas em um carro do Google?"
 
-# "Puxar" informação do documento correspondente à consulta
+#"Puxar" informação do documento correspondente à consulta
 trecho = gerar_e_buscar_consulta(consulta, df, model)
 print(trecho)
 
-# Configurando Temperatura e Top K
+#Configurando Temperatura e Top K
 generation_config = {
   "temperature": 0,
   "candidate_count": 1
 }
 
-# Utilizando Gemini para modificar resposta 
+#Utilizando Gemini para modificar resposta 
 prompt = f"Reescreva esse texto de uma forma mais descontraída, sem adicionar informações que não façam parte do texto: {trecho}"
 
 model_2 = genai.GenerativeModel("gemini-1.0-pro",
