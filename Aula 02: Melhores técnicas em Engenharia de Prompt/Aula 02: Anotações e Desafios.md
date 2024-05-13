@@ -22,7 +22,7 @@ A alucinação da IA acontece quando não há um bom direcionamento para a taref
 É o comando que possui alguma referência para a geração da resposta. Quando utilizamos esta estratégia de prompt, mostramos para a IA, com dados irrelevantes para o verdadeiro projeto, o estilo de comando a ser feito e também o padrão de resposta desejada.
 
 ### Chain-of-Thought
-A cadeia de pensamento será construída no momento de escrita do comando, em que a tarefa será dividida em partes menores e detalhadas  passo a passo, como o raciocínio humano faz diariamente.
+A cadeia de pensamento será construída no momento de escrita do comando, em que a tarefa será dividida em partes menores e detalhada passo a passo, como o raciocínio humano faz diariamente.
 
 ### Least-to-Most-Prompting
 Aqui, o prompt com a problemática será dividido pela própria IA, que solucionará das menores para as maiores tarefas.
