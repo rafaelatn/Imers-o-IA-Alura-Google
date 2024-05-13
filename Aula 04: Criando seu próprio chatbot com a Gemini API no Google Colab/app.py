@@ -3,7 +3,7 @@
 
 # importando o Python SDK
 import google.generativeai as genai
-GOOGLE_API_KEY= ('YOUR_GOOGLE_API_KEY')
+GOOGLE_API_KEY= ('GOOGLE_API_KEY')
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # listando os modelos disponíveis
