@@ -75,7 +75,7 @@ def gerar_e_buscar_consulta(consulta, base, model):
 #Gerando consulta
 consulta = "Como faço para trocar marchas em um carro do Google?"
 
-#"Puxar" informação do documento correspondente à consulta
+#"Puxando" informação do documento correspondente à consulta
 trecho = gerar_e_buscar_consulta(consulta, df, model)
 print(trecho)
 
