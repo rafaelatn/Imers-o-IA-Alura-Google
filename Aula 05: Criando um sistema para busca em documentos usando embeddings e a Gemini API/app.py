@@ -1,4 +1,6 @@
+# Instalando Gemini
 !pip install -U -q google-generativeai
+
 #Importações e configurações iniciais
 import numpy as np
 import pandas as pd
