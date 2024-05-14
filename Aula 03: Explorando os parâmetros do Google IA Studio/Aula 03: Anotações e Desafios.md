@@ -22,12 +22,21 @@ Disponível na versão 1.0 Pro do Google IA Studio, a função irá determinar a
 ## 6. Advanced Settings
 As configurações avançadas são divididas entre Top K e Top P.
 1. **Top K:** Irá controlar o tamanho do glossário utilizado pela IA.
-2. **Top P:** Soma a máxima das probabilidades em relação ao glossário definido no Top K.
+2. **Top P:** Soma a máxima das probabilidades em relação ao glossário definido no Top K (soma máxima de 1).
    
 >A configuração "Temperatura" irá desempatar a seleção do token (explicado no tópico abaixo) caso necessário.
 
-<p align="center"> <img width="500" src="/images/Top K & Top P.png"></p>
-<p align="center"> <img width="500" src="/images/Top K & Toop P2.webp"></p>
+**Exemplo de Top K & Top P**
+
+Na foto abaixo, estamos analisando o "Top K", que controla o tamanho do glossário utilizado. Temos um total de cinco tokens (palavras), porém, determinamos que a IA pode escolher apenas dois deles: *"k= 2"*. 
+
+Ao utilizarmos o "Top P" (junto com o Top K), conseguimos determinar quais serão esses tokens através da soma de suas probabilidades. 
+
+Ou seja, para a frase *"Ontem eu fui no cinema ver __"*, quais seriam os tokens (palavras) mais prováveis de serem utilizados para completá-la? A resposta seria: *filme* ou *documentário*, já que ambos estão dentro das condições Top K e Top P (duas palavras e suas probabilidades somadas resultam em 1).
+
+<p align="center"> <img width="500" src="/images/Top-K-_-Top-P2.jpg"></p>  
+
+>Reprodução: Medium
 
 ## 7. Token
 É a transformação de texto (letras) em números para o LLM (Large Language Machine[^1]) compreender e economizar armazenamento de palavra ao enviar um prompt.
