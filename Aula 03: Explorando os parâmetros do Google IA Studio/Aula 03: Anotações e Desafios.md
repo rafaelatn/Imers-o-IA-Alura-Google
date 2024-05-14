@@ -25,7 +25,10 @@ As configurações avançadas são divididas entre Top K e Top P.
 2. **Top P:** Soma a máxima das probabilidades em relação ao glossário definido no Top K.
    
 >A configuração "Temperatura" irá desempatar a seleção do token (explicado no tópico abaixo) caso necessário.
-   
+
+<p align="center"> <img width="500" src="/images/Top K & Top P.png"></p>
+<p align="center"> <img width="500" src="/images/Top K & Toop P2.webp"></p>
+
 ## 7. Token
 É a transformação de texto (letras) em números para o LLM (Large Language Machine[^1]) compreender e economizar armazenamento de palavra ao enviar um prompt.
 
