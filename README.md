@@ -11,7 +11,7 @@
 🛠 Ferramentas utilizadas
    
 ## 🤔 O que é a Imersão IA Alura & Google?
-O projeto teve como objetivo introduzir e ensinar os principais fundamentos da Inteligência Artificial Generativa, desde Engenharia de Prompt até a criação de programas usando o Gemini, IA da Google. O evento ocorreu de 06/05/24 a 10/05/24, havendo lives de abertura, introdução ao Python e encerramento nos dias 03, 08 e 13 de maio, respectivamente. 
+O projeto teve como objetivo introduzir e ensinar os principais fundamentos da Inteligência Artificial Generativa, desde Engenharia de Prompt até a criação de programas usando o Gemini, IA da Google. O evento ocorreu de 03/05/24 a 13/05/24, havendo lives de abertura, introdução ao Python e encerramento nos dias 03, 08 e 13 de maio, respectivamente. 
 
 
 ## 👩🏼‍💻 Assuntos abordados e desafios propostos
