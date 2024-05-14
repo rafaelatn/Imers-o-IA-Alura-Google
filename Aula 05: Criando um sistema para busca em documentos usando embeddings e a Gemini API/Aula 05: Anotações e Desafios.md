@@ -31,7 +31,7 @@ Combinação da Inteligência Artificial com os dados internos, possibilitando a
 
 # 📄 Documentos Google 
 > ### Conferidos durante a semana de imersão
-1. [Começar a usar a API Gemini ](https://ai.google.dev/gemini-api/docs?hl=pt-br)
+1. [Welcome to the Gemini API Cookbook](https://github.com/google-gemini/cookbook)
 
 2. [Guia de embeddings](https://ai.google.dev/gemini-api/docs/embeddings?hl=pt-br)
 
