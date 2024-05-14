@@ -10,7 +10,7 @@
 # 2. Embeddings
 Forma de trazer contexto semântico para as palavras, letras viram coordenadas em um plano cartesiano. Dados podem vir tanto da IA quanto de um banco de dados interno.
 <p align="center"><img src="./images/Embedding2dWithLabels.jpg" width="700"/></p>
-<p align="center"><img src="./images/Alura & Google.jpg" width="700"/></p>
+<p align="center"><img src="./images/Embedding.png" width="700"/></p>
 
 # 3. Trade-Off em Embeddings
 Saber quando alternar a utilização de um banco de dados interno para o banco de dados da IA, e vice-versa. Em situações que necessitam de mais criatividade, a IA será mais favorável, diferente dos casos que necessitam de maior **controle** do conteúdo que está sendo inserido.
