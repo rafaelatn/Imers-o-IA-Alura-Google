@@ -1,5 +1,5 @@
 # Imersão IA Alura & Google 2024
-Repositório voltado para a documentação do evento!
+
 <p align="center"><img src="./images/Alura & Google.jpg" width="600"/></p>
 <p align="center"><img src="./images/Gemini.jpg" width="600"/></p>
 
