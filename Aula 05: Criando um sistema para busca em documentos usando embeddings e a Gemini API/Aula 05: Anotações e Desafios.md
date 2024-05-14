@@ -31,13 +31,18 @@ Combinação da Inteligência Artificial com os dados internos, possibilitando a
 
 # 📄 Documentos Google 
 > ### Conferidos durante a semana de imersão
-1. [Welcome to the Gemini API Cookbook](https://github.com/google-gemini/cookbook)
 
-2. [Guia de embeddings](https://ai.google.dev/gemini-api/docs/embeddings?hl=pt-br)
+1. [Guia de início rápido do Google AI Studio](https://ai.google.dev/gemini-api/docs/ai-studio-quickstart?hl=pt-br)
+   
+2. [Welcome to the Gemini API Cookbook](https://github.com/google-gemini/cookbook)
+   
+3. [Galeria de Prompt](https://ai.google.dev/examples?keywords=prompt&hl=pt-br)
+   
+4. [Guia de embeddings](https://ai.google.dev/gemini-api/docs/embeddings?hl=pt-br)
 
-3. [Pesquisa de documentos com embeddings](https://ai.google.dev/gemini-api/tutorials/document_search?hl=pt-br#api_changes_to_embeddings_with_model_embedding-001)
+5. [Pesquisa de documentos com embeddings](https://ai.google.dev/gemini-api/tutorials/document_search?hl=pt-br#api_changes_to_embeddings_with_model_embedding-001)
 
-4. [Foundational courses - Embeddings](https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture)
+6. [Foundational courses - Embeddings](https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture)
 
 ---
 
