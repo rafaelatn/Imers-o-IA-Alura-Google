@@ -21,11 +21,13 @@ Disponível na versão 1.0 Pro do Google IA Studio, a função irá determinar a
 
 ## 6. Advanced Settings
 As configurações avançadas são divididas entre Top K e Top P.
-1. **Top K:** Irá controlar o tamnaho do glossário utilizado
-2. **Top P:**
+1. **Top K:** Irá controlar o tamanho do glossário utilizado pela IA.
+2. **Top P:** Soma a máxima das probabilidades em relação ao glossário definido no Top K.
+   
+>A configuração "Temperatura" irá desempatar a seleção do token (explicado no tópico abaixo) caso necessário.
    
 ## 7. Token
-É a transformação de texto (letras) em números para o LLM (Large Language Machine[^1]) compreender e economizar armazenamento de palavra.
+É a transformação de texto (letras) em números para o LLM (Large Language Machine[^1]) compreender e economizar armazenamento de palavra ao enviar um prompt.
 
 ---
 
