@@ -21,7 +21,11 @@ Forma de trazer contexto semântico para as palavras, letras viram coordenadas e
 Saber quando alternar a utilização de um banco de dados interno para o banco de dados da IA, e vice-versa. Em situações que necessitam de mais criatividade, a IA será mais favorável, diferente dos casos que necessitam de maior **controle** do conteúdo que está sendo inserido.
 
 # 3. Rag em Embeddings
-Combinação da IA com dados necessários para o projeto. Desse modo, a pesquisa possue dois campos de dados: a da IA e a interna.
+Combinação da Inteligência Artificial com os dados internos, possibilitando a pesquisa de possuir dois campos de dados.
+
+<p align="center"> <img width="600" src="/images/jumpstart-fm-rag.jpg"></p>
+
+>Reprodução: AWS
 
 ---
 
