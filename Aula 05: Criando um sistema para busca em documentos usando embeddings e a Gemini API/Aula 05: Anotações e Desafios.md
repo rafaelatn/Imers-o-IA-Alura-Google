@@ -19,9 +19,16 @@ Combinação da IA com dados necessários para o projeto. Desse modo, a pesquisa
 ---
 
 # 📄 Documentos Google 
-1. [Guia de embeddings](https://ai.google.dev/gemini-api/docs/embeddings?hl=pt-br)
-2. [Pesquisa de documentos com embeddings](https://ai.google.dev/gemini-api/tutorials/document_search?hl=pt-br#api_changes_to_embeddings_with_model_embedding-001)
+> ### Conferidos durante a semana de imersão
+1. [Começar a usar a API Gemini ](https://ai.google.dev/gemini-api/docs?hl=pt-br)
 
+2. [Guia de embeddings](https://ai.google.dev/gemini-api/docs/embeddings?hl=pt-br)
+
+3. [Pesquisa de documentos com embeddings](https://ai.google.dev/gemini-api/tutorials/document_search?hl=pt-br#api_changes_to_embeddings_with_model_embedding-001)
+
+4. [Foundational courses - Embeddings](https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture)
+
+---
 
 # *Fim das anotações/ desafios do última dia.*
 #### [↩Voltar para o Início](https://github.com/rafaelatn/Imersao-IA-Alura-Google/tree/main?tab=readme-ov-file)
